@@ -98,11 +98,13 @@ int find_min()
 	printf("%d\n", min);
 //	return min;
 }
+
+
 int main()
 {
 	int a, i;
 	do{
-		printf("Enter the options:\n1.insert\n2.display\n3.findmin\n4.arrange\n");
+		printf("Enter the options:\n1.insert\n2.display\n3.findmin\n4.arrange\n5.delete\n");
 		scanf("%d", &a);
 		switch(a){
 			case 1:
@@ -116,6 +118,9 @@ int main()
 				break;	
 			case 4:
 				arrange();
+				break;	
+			case 5:
+				delet();
 				break;		
 			default:
 				printf("Invalid option\n");
