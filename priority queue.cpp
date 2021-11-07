@@ -28,11 +28,10 @@ void arrange()
 			}
 		}
 	}
-	for (int c = front; c <= rear; c++)
-	{
-	
-    printf("%d\n", pq[c]);
-	}
+//	for (int c = front; c <= rear; c++)
+//	{
+//		printf("%d\n", pq[c]);
+//	}
 }
 void insert()
 {
@@ -54,7 +53,7 @@ void insert()
 		scanf("%d", &el);
 //		rear = rear+1;
 		pq[++rear]= el;
-//		arrange();
+		arrange();
 	}
 }
 
